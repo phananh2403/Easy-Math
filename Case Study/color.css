@@ -75,7 +75,11 @@ button {
 }
 #true {
   color: green;
+  cursor: pointer;
+  transition: .2s;
+
 }
 #false {
   color: red;
+  cursor: pointer;
 }
