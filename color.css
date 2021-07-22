@@ -3,16 +3,52 @@ body {
   font-size: 35px;
   height: 100%;
   background-image: url("math.jpg") ;
-  
   background-repeat:   no-repeat;
-   
-  
 }
 #main {
   width: 450px;
   height: 700px;
   background-color: #A9D9D9;
-  margin: 0 auto;
+  margin: 100px 250px auto;
+  
+}
+#startArea{
+  width: 180px;
+  height: 170px;
+  background-color: #A9D9D9;
+  margin: 300px 400px auto;
+  text-align: center;
+  
+}
+#Btn{
+  cursor: pointer;
+  width: 70px;
+  height: 50px;
+  font-family: 'Press Start 2P', cursive;
+}
+.playBtn{
+  color: green;
+}
+.replayBtn{
+  color: red;
+}
+h2{
+  background-color: #A9D9D9;
+  text-align: center;
+  margin: 0 0;
+  color: beige;
+  font-size: 35px;
+  
+}
+.start , .play {
+  position: absolute;
+  
+}
+.start{
+  z-index: 2;
+}
+.play{
+  z-index: 3;
 }
 h1 {
   background-color: #F2D8E1;
@@ -71,7 +107,7 @@ p {
   background-color: #A9D9D9;
   text-align: center;
 }
-button {
+.button {
   width: 120px;
   height: 120px;
   margin: 10px;
@@ -87,4 +123,7 @@ button {
 #false {
   color: red;
   cursor: pointer;
+  
 }
+
+
