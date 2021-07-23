@@ -22,10 +22,10 @@ function generateCalculation() {
   if (level >= 20) {
     cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8);
   }
-  if (level >= 30) {
+  if (level >= 40) {
     cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8);
   }
-  if (level >= 40) {
+  if (level >= 60) {
     cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8);
   }
   document.getElementById("calculation").innerHTML = cal;
