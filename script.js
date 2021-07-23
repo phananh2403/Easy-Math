@@ -19,16 +19,14 @@ function generateCalculation() {
   let num2 = getRandomNumber(1 * level, 5 * level);
   let op = getRandomOperator();
   let cal = num1 + " " + op + " " + num2;
-  if (level >= 10) {
-    cal =
-      num1 +
-      " " +
-      op +
-      " " +
-      num2 +
-      getRandomOperator() +
-      " " +
-      getRandomNumber(2, 8);
+  if (level >= 20) {
+    cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8);
+  }
+  if (level >= 30) {
+    cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8);
+  }
+  if (level >= 40) {
+    cal = num1 + " " + op + " " + num2 + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8) + getRandomOperator() + " " + getRandomNumber(2, 8);
   }
   document.getElementById("calculation").innerHTML = cal;
   document.getElementById("result").innerHTML = getRandomResult(cal);
